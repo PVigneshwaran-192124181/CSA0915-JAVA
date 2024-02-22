@@ -1,0 +1,24 @@
+1.public class Pair<K, V> { - This line starts the definition of a generic class named Pair that takes two type parameters K and V.
+2.private K key; - This line declares a private instance variable key of type K.
+3.private V value; - This line declares a private instance variable value of type V.
+4.public Pair(K key, V value) { - This line defines a constructor for the Pair class that takes two parameters of types K and V.
+5.this.key = key; - This line assigns the value of the first constructor parameter to the key instance variable.
+6.this.value = value; - This line assigns the value of the second constructor parameter to the value instance variable.
+7.public K getKey() { - This line defines a getter method for the key instance variable that returns a value of type K.
+8.eturn key; - This line returns the value of the key instance variable.
+9.public void setKey(K key) { - This line defines a setter method for the key instance variable that takes a parameter of type K.
+10.this.key = key; - This line assigns the value of the setter parameter to the key instance variable.
+11.public V getValue() { - This line defines a getter method for the value instance variable that returns a value of type V.
+12.return value; - This line returns the value of the value instance variable.
+13.public void setValue(V value) { - This line defines a setter method for the value instance variable that takes a parameter of type V.
+14.this.value = value; - This line assigns the value of the setter parameter to the value instance variable.
+15.public static void main(String[] args) { - This line defines the main method, which is the entry point of the program.
+16.Pair<Integer, String> pair1 = new Pair<>(1, "One"); - This line creates a new instance of the Pair class with type parameters Integer and String, and values 1 and "One".
+17.Pair<String, Double> pair2 = new Pair<>("PI", 3.14); - This line creates a new instance of the Pair class with type parameters String and Double, and values "PI" and 3.14.
+18.System.out.println("Pair 1: Key=" + pair1.getKey() + ", Value=" + pair1.getValue()); - This line prints the key-value pair of pair1 instance using the getKey and getValue methods.
+19.System.out.println("Pair 2: Key=" + pair2.getKey() + ", Value=" + pair2.getValue()); - This line prints the key-value pair of pair2 instance using the getKey and getValue methods.
+20.pair1.setKey(42); - This line sets the key of the pair1 instance to 42 using the setKey method.
+21.pair2.setValue(2.71); - This line sets the value of the pair2 instance to 2.71 using the setValue method.
+22.System.out.println("Updated Pair 1: Key=" + pair1.getKey() + ", Value=" + pair1.getValue()); - This line prints the updated key-value pair of pair1 instance using the getKey and getValue methods.
+23.System.out.println("Updated Pair 2: Key=" + pair2.getKey() + ", Value=" + pair2.getValue()); - This line prints the updated key-value pair of pair2 instance using the getKey and getValue methods.
+

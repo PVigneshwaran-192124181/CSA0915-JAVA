@@ -1,0 +1,29 @@
+1.class Animal { - This line begins the definition of the Animal class.
+Purpose: To define a base class for animals with common behavior like eating.
+2.void eat() { - This line declares a method named eat within the Animal class.
+Purpose: To provide a default implementation of how all animals eat.
+3.System.out.println("Animal is eating"); - This line executes whenever the eat method is called on any instance of the Animal class.
+Purpose: To print a message indicating that an animal is eating.
+4.class Dog extends Animal { - This line begins the definition of the Dog class, which inherits from the Animal class.
+Purpose: To create a specialized class for dogs that shares some behaviors with other animals.
+5.void eat() { - This line declares a method named eat within the Dog class.
+Purpose: To provide a customized implementation of how dogs eat, possibly extending or modifying the behavior defined in the Animal class.
+6.super.eat(); - This line calls the eat method of the superclass (the Animal class).
+Purpose: To ensure that the default behavior of eating defined in the Animal class is performed before any custom logic in the Dog class.
+7.System.out.println("Dog is eating"); - This line executes after the superclass's eat method is called.
+Purpose: To print a message indicating that a dog is eating, potentially providing more details about their unique eating habits.
+8.public class SuperKeywordExampleC { - This line begins the definition of the outermost class, SuperKeywordExampleC.
+Purpose: To contain the main method and serve as the starting point for running the application.
+9.public static void main(String[] args) { - This line declares the main method, which serves as the entry point into the Java Virtual Machine.
+Purpose: To instantiate an object of type Dog and call its eat method, demonstrating the inheritance and polymorphism concepts.
+10.Dog myDog = new Dog(); - This line creates a new instance of the Dog class.
+Purpose: To have an example object of the Dog class available for testing the eat method.
+11.myDog.eat(); - This line calls the eat method of the Dog class instance, myDog.
+Purpose: To demonstrate the execution flow of the code and observe the output.
+
+When the program runs, it outputs:
+
+Animal is eating
+Dog is eating
+
+

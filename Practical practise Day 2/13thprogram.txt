@@ -1,0 +1,17 @@
+1.public class Box<T> { - This line starts the definition of a generic class named Box that takes a single type parameter T.
+2.private T value; - This line declares a private instance variable value of type T.
+3.public Box(T value) { - This line defines a constructor for the Box class that takes a parameter of type T.
+4.this.value = value; - This line assigns the value of the constructor parameter to the value instance variable.
+5.public T getValue() { - This line defines a getter method for the value instance variable that returns a value of type T.
+6.return value; - This line returns the value of the value instance variable.
+7.public void setValue(T value) { - This line defines a setter method for the value instance variable that takes a parameter of type T.
+8.this.value = value; - This line assigns the value of the setter parameter to the value instance variable.
+9.public static void main(String[] args) { - This line defines the main method, which is the entry point of the program.
+10.Box<Integer> integerBox = new Box<>(42); - This line creates a new instance of the Box class with a type parameter of Integer and a value of 42.
+11.Box<String> stringBox = new Box<>("Hello, Generics!"); - This line creates a new instance of the Box class with a type parameter of String and a value of "Hello, Generics!".
+12.System.out.println("Integer Box Value: " + integerBox.getValue()); - This line prints the value of the integerBox instance using the getValue method.
+13.System.out.println("String Box Value: " + stringBox.getValue()); - This line prints the value of the stringBox instance using the getValue method.
+14.integerBox.setValue(99); - This line sets the value of the integerBox instance to 99 using the setValue method.
+15.stringBox.setValue("Updated Value"); - This line sets the value of the stringBox instance to "Updated Value" using the setValue method.
+16.System.out.println("Updated Integer Box Value: " + integerBox.getValue()); - This line prints the updated value of the integerBox instance using the getValue method.
+17.System.out.println("Updated String Box Value: " + stringBox.getValue()); - This line prints the updated value of the stringBox instance using the getValue method.
